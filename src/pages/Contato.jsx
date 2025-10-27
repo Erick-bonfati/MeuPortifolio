@@ -9,7 +9,7 @@ export default function Contato() {
 
         <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
           <div className="form-group">
-            <input type="text" placeholder="Seu nome" required />
+            <input type="text" placeholder="Seu nome" required /> 
           </div>
           <div className="form-group">
             <input type="email" placeholder="Seu e-mail" required />
