@@ -19,7 +19,8 @@ export default function ProjetoDetalhe() {
         <main className="container">
             <h1 className="title">{projeto.titulo}</h1>
             <img src={projeto.imagem} alt={projeto.titulo} className="detail-img" />
-            <p className="detail-texto">{projeto.conteudo}</p>
+            <p className="detail-texto"
+            dangerouslySetInnerHTML={{ __html: projeto.conteudo }}/>
             {projeto.links && projeto.links.length > 0 && (
                 <div>
                     <h3>Links úteis:</h3>

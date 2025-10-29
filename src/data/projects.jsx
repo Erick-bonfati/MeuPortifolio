@@ -6,7 +6,10 @@ export const projects = [
     imagem: "/imgs/minitela.png",
     resumo: "Um aplicativo desenvolvido em C#, NodeJs, React e Electron para comunicação de uma minitela embarcada se comunicar com um software desenvolvido nas versões windows e linux",
     conteudo: `
-      Falando sobre o app minitela....
+      <h2>Descricao projeto</h2>
+      <p>Texto projeto</p>
+      <img src="/imgs/minitela.png"/>
+      <p>Novo texto projeto</p>
     `,
     links: [
       { label: "Link do produto lançado oficialmente na loja Positivo", url: "https://loja.meupositivo.com.br/notebook-positivo-vision-r15m-amd-ryzen-7-5825u-linux-8gb-ram-256gb-ssd-wi-fi-6-15-full-hd-ips-minitela-preto-3003077/p" },
@@ -20,7 +23,10 @@ export const projects = [
     imagem: "/imgs/policorp.png",
     resumo: "Site Institucional desenvolvido em Javascript, Vue e Nodejs, para a empresa Policorp Tecnologia, este site possui um total de 10 páginas, contendo integrações de APIs, conexões com serviços de envio de email, envio de formulários e integrações em banco de dados",
     conteudo: `
-      Falando sobre o site
+      <h2>Descricao projeto</h2>
+      <p>Texto projeto</p>
+      <img src="/imgs/minitela.png"/>
+      <p>Novo texto projeto</p>
     `,
     links: [
       { label: "Site Policorp", url: "https://www.policorp.com.br" },
@@ -31,13 +37,73 @@ export const projects = [
     id: 3,
     slug: "lash-designer",
     titulo: "Site Lash Designer",
-    imagem: "/imgs/colocarImagem.png",
+    imagem: "/imgs/site-lash/visao1.png",
     resumo: "Falar resumo",
     conteudo: `
-      Falando sobre o site
+      <h2>O site Lash Designer foi um site desenvolvido sob uma parceria sem objetivos financeiros</h2>
+      <p>O objetivo do site seria os clientes poderem realizar agendamentos de horarios para algum serviço oferecido, com as opções de dias disponiveis no agendamento e também horarios, também foi criado um dashboard "Painel de admin" que ali podemos verificar as informações dos agendamentos, faturamento estimizado com base no serviço oferecido e também uma opção para adicionar, editar e/ou remover algum serviço/produto</p> 
+      
+      <br>
+
+      <h2>Visualização de produtos:</h2>
+      <img src="/imgs/site-lash/servicos.png" class="detail-img"/>
+      <p>Na página principal podemos verificar todos os serviços, valores e tempo para execução.</p>
+
+      <br>
+
+      <h2>Rota de agendamentos:</h2>
+      <img src="/imgs/site-lash/agendar.png" class="detail-img"/>
+      <p>Acima podemos selecionar o serviço oferecido, escolher um horario com base nas horas disponiveis, completar informações pessoais e adicionar observações</p>
+      
+      <br>
+
+      <h2>Login de usuario:</h2>
+
+      <img src="/imgs/site-lash/login.png" class="detail-img"/>
+      <p>Foi criado um sistema de login exclusivo para o administrador do site, para que ele possa acessar/alterar as informações de seus produtos.</p>
+
+      <br>
+
+      <h2>Painel de Admin:</h2>
+      <img src="/imgs/site-lash/painel-admin.png" class="detail-img"/>
+      <p>Nesta sessão é onde ficam todas as informações de interesse do fornecedor, aqui podemos visualizar os agendamentos, criar/editar serviços e verificar faturamento liquido e bruto.</p>
+
+      <br>
+
+      <h2>Agendamentos realizados:</h2>
+      <img src="/imgs/site-lash/agendamentos.png" class="detail-img"/>
+      <p>Aqui ficam todas informações de cada agendamento, e com opções de selecionar o estado atual do agendamento, se ja foi concluido, confirmado, cancelado ou concluído.</p>
+
+      <br>
+
+      <h2>Criação e edição de serviços:</h2>
+      <img src="/imgs/site-lash/add-editar-produto.png" class="detail-img"/>
+      <p>Bom, aqui é onde podemos adicionar, atualizar ou remover algum serviço.</p>
+
+      <br>
+
+      <h2>Rota edição do produto:</h2>
+      <img src="/imgs/site-lash/editar-produto.png" class="detail-img"/>
+      <p>Nesta rota temos a visualização e as configurações de nosso produto/serviço, e finalizando as alterações basta clicar em "Atualizar" .</p>
+
+      <br>
+
+      <h2>Painel financeiro:</h2>
+      <img src="/imgs/site-lash/margem.png" class="detail-img"/>
+      <p>E por fim, temos a rotas de controle de finanças, aqui podemos verificar qual foi o faturamento bruto de todos os produtos, os custos dos materias e também o faturamento liquido geral.</p>
+
+      <br>
+
+      <p>E este foi o desenvolvimento do site Lash Designer, estou em fase de implementação final de algumas funcionalidades para envio de email de confirmação de agendamentos e também rotas para envio de mensagens via whatsapp, mas em breve o projeto será disponibilizado na web, já embarcado em um servidor + dominio</p>
+
+      <strong> Agradeço por toda a atenção aos detalhes do meu projeto, fico muito feliz em saber que meu trabalho vem sendo reconhecido por outras pessoas! </strong>
+
+      <br> <br>
+
+      <strong class="red-strong">Como o projeto foi criado sem inteções lucrativas, eu disponibilizei todo seu código fonte em meu github!</strong>
     `,
     links: [
-      { label: "Link Projeto", url: "https://github.com/Erick-bonfati/SiteLash" },
+      { label: "https://github.com/Erick-bonfati/SiteLash", url: "https://github.com/Erick-bonfati/SiteLash" },
 
     ]
   },
@@ -48,7 +114,10 @@ export const projects = [
     imagem: "/imgs/colocarImagem.png",
     resumo: "Falar resumo",
     conteudo: `
-      Falando sobre o site
+      <h2>Descricao projeto</h2>
+      <p>Texto projeto</p>
+      <img src="/imgs/minitela.png"/>
+      <p>Novo texto projeto</p>
     `,
     links: [
       { label: "Link Projeto", url: "https://github.com/Erick-bonfati/Central-estudos" },
@@ -62,7 +131,10 @@ export const projects = [
     imagem: "/imgs/colocarImagem.png",
     resumo: "Site Institucional desenvolvido em Javascript, Vue e Nodejs, para a empresa Policorp Tecnologia, este site possui um total de 10 páginas, contendo integrações de APIs, conexões com serviços de envio de email, envio de formulários e integrações em banco de dados",
     conteudo: `
-      Falando sobre o site
+      <h2>Descricao projeto</h2>
+      <p>Texto projeto</p>
+      <img src="/imgs/minitela.png"/>
+      <p>Novo texto projeto</p>
     `,
     links: [
       { label: "Link Projeto", url: "https://github.com/Erick-bonfati/ModeloWebReact" },
@@ -76,7 +148,10 @@ export const projects = [
     imagem: "/imgs/colocarImagem.png",
     resumo: "Estes são dois repositórios de estudos que fiz durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite",
     conteudo: `
-      Falando sobre o projeto
+      <h2>Descricao projeto</h2>
+      <p>Texto projeto</p>
+      <img src="/imgs/minitela.png"/>
+      <p>Novo texto projeto</p>
     `,
     links: [
       { label: "Link Projeto", url: "https://github.com/Erick-bonfati/React" },
