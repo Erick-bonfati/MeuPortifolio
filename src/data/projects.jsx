@@ -147,7 +147,7 @@ export const projects = [
     conteudo: `
       <h2>Descricao projeto</h2>
       <p>Texto projeto</p>
-      <img src="/imgs/minitela.png"/>
+      <img src="/imgs/minitela.png" class="detail-img"/>
       <p>Novo texto projeto</p>
     `,
     links: [
@@ -159,16 +159,51 @@ export const projects = [
     id: 5,
     slug: "modelo-web-react",
     titulo: "Site ModeloWebReact",
-    imagem: "/imgs/colocarImagem.png",
-    resumo: "Site Institucional desenvolvido em Javascript, Vue e Nodejs, para a empresa Policorp Tecnologia, este site possui um total de 10 páginas, contendo integrações de APIs, conexões com serviços de envio de email, envio de formulários e integrações em banco de dados",
+    imagem: "/imgs/modeloweb/visao1.png",
+    resumo: "Este foi um site modelo em que desenvolvi, com o objetivo de facilitar a criação de novos projetos com um modelo avançado em termos de estruturação",
     conteudo: `
-      <h2>Descricao projeto</h2>
-      <p>Texto projeto</p>
-      <img src="/imgs/minitela.png"/>
-      <p>Novo texto projeto</p>
+      <h2>Este foi um site modelo em que desenvolvi, com o objetivo de facilitar a criação de novos projetos com um modelo avançado em termos de estruturação</h2>
+      <p>O projeto ModeloWebReact foi muito util para mim, pois com ele pude avançar em diversos projetos, sem a necessidade de criar toda estrutura MVC toda vez que criasse um novo projeto e também ja continha informações muito valiosas, como registro/login de usuario, configuração de rotas, separando de arquivo backend e estilização responsiva.</p>
+      
+      <br>
+
+      <p> O projeto foi desenvolvido em <strong>React + Vite + NodeJs(backend)</strong>, e para o banco de dados foi utilizado o MongoDb.</p> 
+
+      <br>
+
+      <h2>Apresentação das funcionalidades:</h2>
+
+      <p>Pela página Dashboard, para acessar ela foi criado um bloqueio na rota, e para permitir o acesso, o usuario deve registar e depois logar em sua conta: </p>
+
+
+      <img src="/imgs/modeloweb/dashboard.png" class="detail-img"/>
+
+      <br>
+
+      <p>Acessando a de registro temos uma interface muito simples, porem funcional, redirecionando para rota de login assim que o usuario é registrado,essa configuração foi feito utilizando MongoDb</p>
+
+      <img src="/imgs/modeloweb/registro.png" class="detail-img"/>
+
+      <p>E na rota de login basta apenas digitar seu usuario e senha e você será encaminhado para a rota de dashboard novamente, onde agora terá acesso ao conteudo dentro dela:</p>
+
+      <img src="/imgs/modeloweb/login.png" class="detail-img"/>
+
+      <p> E por fim, com o usuario logado podemos ver as informações da rota dashboard.</p>
+      <strong>Obs.: O login de usuario fica salvo em cache na memória por 7 dias até ser necessario realizar um login novamente.</strong>
+
+      <br> <br>
+
+      <img src="/imgs/modeloweb/dashboard-logado.png" class="detail-img"/>
+
+      <br>
+
+      <p>E este foi o projeto ModeloWebReact que desenvolvi, é um projeto muito simples em comparação aos meus outros desenvolvimentos, mas foi certamente um projeto que me auxiliou muito no dia a dia.</p>
+
+      <p>Agradeço pela leitura e espero que tenha gostado!</p>
+
     `,
     links: [
-      { label: "Link Projeto", url: "https://github.com/Erick-bonfati/ModeloWebReact" },
+      { label: "https://github.com/Erick-bonfati/ModeloWebReact", url: "https://github.com/Erick-bonfati/ModeloWebReact" },
 
     ]
   },
