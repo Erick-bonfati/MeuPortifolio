@@ -23,13 +23,44 @@ export const projects = [
     imagem: "/imgs/policorp.png",
     resumo: "Site Institucional desenvolvido em Javascript, Vue e Nodejs, para a empresa Policorp Tecnologia, este site possui um total de 10 páginas, contendo integrações de APIs, conexões com serviços de envio de email, envio de formulários e integrações em banco de dados",
     conteudo: `
-      <h2>Descricao projeto</h2>
-      <p>Texto projeto</p>
-      <img src="/imgs/minitela.png"/>
-      <p>Novo texto projeto</p>
+      <p>Site Institucional desenvolvido em Javascript, Vue e Nodejs, para a empresa Policorp Tecnologia, este site possui um total de 10 páginas, contendo integrações de APIs, conexões com serviços de envio de email, envio de formulários e integrações em banco de dados, foi um projeto em que desenvolvi na empresa onde estou trabalhando atualmente.</p>
+
+      <p>O objetivo deste projeto era renovar o site por completo, site que foi desenvolvido em JOOMLA, porem com um visual mais moderno e estilizado, porém eu optei por sugerir uma solução diferente, que seria criar um site desde o inicio, dessa vez com uma documentação técnica, linguagem, framework e de fácil manutenção, e então seguimos com está ideia</p>
+
+      <h2>Apresentação do site</h2> <br> <br> <br>
+
+      <img src="/imgs/site-policorp/form-curriculo.png" class="detail-img"/>
+      <img src="/imgs/site-policorp/form-contato.png" class="detail-img"/>
+      
+      <img src="/imgs/site-policorp/blogs.png" class="detail-img"/>
+      
+      <img src="/imgs/site-policorp/chatbot.png" class="detail-img"/>
+
+      <p>Novamente explicando sobre o desenvolvimento, eu utilizei VueJs como base para este projeto, seguindo regras de estilização com CSS, e separando a estruração do site por blocos, cada um desses blocos recebiam determina informação, para isso utilizei da estruturação MVC.</p>
+
+      
+
+      <p>Sobre as principais funcionalidades do site se encontram: ChatBot Interativo, Formulários de Contato e Formulário de envio de curriculo e Blogs.</p>
+
+      
+
+      <p>Para o desenvolvimento do backend, foram criadas 3 APIs, sendo elas, API DialogFlow, API Contatos e API Blogs, todas essas APIs foram armazenadas em um servidor no google cloud e posteriormente adicionado um subdominio para integração ao site como requisições HTTPS.</p>
+
+
+
+      <p>E por fim foi criado uma documentação completa do projeto ensinando e explicação a utilização do código e quais padrões de desenvolvimento devem ser seguidos.</p>
+
+
+
+      <p>Finalizando todas etapas acima, foi necessario criar um configuração em nosso servidor interno para hospedagem do front-end, e utilizei como recurso principal o NGINX</p>
+       
+      
+      <p>Na página principal podemos verificar todos os serviços, valores e tempo para execução.</p>
+
+      <br>
     `,
     links: [
-      { label: "Site Policorp", url: "https://www.policorp.com.br" },
+      { label: "https://www.policorp.com.br", url: "https://www.policorp.com.br" },
 
     ]
   },
@@ -38,7 +69,7 @@ export const projects = [
     slug: "lash-designer",
     titulo: "Site Lash Designer",
     imagem: "/imgs/site-lash/visao1.png",
-    resumo: "Falar resumo",
+    resumo: "O site Lash Designer foi um site desenvolvido sob uma parceria sem objetivos financeiros",
     conteudo: `
       <h2>O site Lash Designer foi um site desenvolvido sob uma parceria sem objetivos financeiros</h2>
       <p>O objetivo do site seria os clientes poderem realizar agendamentos de horarios para algum serviço oferecido, com as opções de dias disponiveis no agendamento e também horarios, também foi criado um dashboard "Painel de admin" que ali podemos verificar as informações dos agendamentos, faturamento estimizado com base no serviço oferecido e também uma opção para adicionar, editar e/ou remover algum serviço/produto</p> 
