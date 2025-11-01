@@ -6,13 +6,33 @@ export const projects = [
     imagem: "/imgs/minitela.png",
     resumo: "Um aplicativo desenvolvido em C#, NodeJs, React e Electron para comunicação de uma minitela embarcada se comunicar com um software desenvolvido nas versões windows e linux",
     conteudo: `
-      <h2>Descricao projeto</h2>
-      <p>Texto projeto</p>
-      <img src="/imgs/minitela.png"/>
-      <p>Novo texto projeto</p>
+      <h2>Um aplicativo desenvolvido em C#, NodeJs, React e Electron para comunicação de uma minitela embarcada se comunicar com um software desenvolvido nas versões windows e linux</h2>
+      <p>O projeto minitela foi um projeto realizado na empresa onde trabalho atualmente e foi feito sob parceira da empresa Positivo Tecnologia, o objetivo era criar um aplicativo que se comunicasse com um dispositivo LCD embarcado num hardware deles, então foram levantados diversos requisitos, sobre as funcionalidades, métodos de comunicação e estilização do app.</p>
+
+      <h2>Requisitos do projeto</h2>
+
+      <p>Os requisitos do projeto eram os seguintes: o app deveria possuir um total de 5 telas, sendo que cada uma deveria receber diferentes informações, sobre: notificações do whatsapp, tela de anotações, monitor do sistema, visualização do clima, e envio de imagens e gifs.</p>
+
+      <p>Este projeto levou cerca de 8 meses para ser finalizado por conta das mudanças de requisitos, versões do harware e adaptação para versão linux, porem foi possível criar um sistema 100% funcional e adaptado aos requisitos de cada hardware, os primeiros hardwares que recebem uma minitela embarcado foram notebooks com Ryzen 5 e 7 e posteriormente a ideia eram aplicar a processadores celeron também, ou seja, o desempenho do app deveria ser excelente, por conta das limitações da versão celeron, então no fim de projeto com muito esforço de toda equipe foi possivel chegar em um consumo de memória, ram e cpu muito agradaveis.</p>
+
+      <h2>Apresentação de telas</h2>
+
+      <img src="/imgs/telas-minitela.png" class="detail-img"/>
+
+      <p><strong>Tela de whatsapp:</strong> Esta tela foi desenvolvida com objetivo de visualizar até duas notificações do whatsapp ao mesmo, sendo assim não seria mais necessario o usuario ter que abrir o app do whatsapp para só assim descobrir quem lhe enviou mensagem e com qual conteúdo.</p>
+
+      <p><strong>Tela Notas:</strong> A tela de notas foi criado com objetivo do usuario poder fazer anotações ou lembranças rápidas, como: "comprar arroz, ligar maquina de lavar, estudar javascript...", então com está tela seria possivel otimizar seu tempo sem precisar lembrar o que fazer a todo momento. </p>
+
+      <p><strong>Tela Monitor de Sistema:</strong> Esta tela foi criada com objetivo de verificar três informações do sistema, sendo elas: Porcentagem de bateria, Wifi e Bluetooth, e para enviar esses dados para a minitela foram criadas funções de busca no sistema e depois convertidas em buffers para envio para a minitela.</p>
+
+      <p><strong>Tela Clima:</strong> A tela de clima, foi criado com objetivo de verificar o clima do dia atual e dos próximos dois dias, com informações de temperatura atual, máxima e minima, e para buscar essas informações foi necessario integrar uma API de clima que fornecia essas informações como um json, então bastava apenas converter esses dados para buffers também.</p>
+
+      <p><strong>Tela Imagens e Gifs:</strong> E por fim, a tela de imagens e gifs, foi uma tela desenvolvida por mim em NodeJs, Electron e React, na minitela, possuia um arquivo chamado ".acf" este arquivo era responsavel por atualizar todos os elementos visuais da minitela e também criar ids para determinado local, por ex: no local onde ficaria a porcentagem da bateria, existia um valor chamado id-battery, e com este valor no app em C# nós apenas faziamos com que no local de id-battery fosse enviado o valor da bateria atual da maquina, e assim para toda e qualquer outra informações do app, então para as imagens e gifs foram criados diversos arquivos acfs com diferentes imagens e gifs e para enviar essas imagens e gifs para a minitela, eram passados buffers, decodificadores e compressões como uma função para dentro do hardware dessa minitela, meu trabalho foi utilizar esses parametros e adicionar essas diferentes imagens e gifs para substituir o antigo conteudo. Com isso, no app em C# foi integrado este app criado em Electron + React, e o usuario poderia selecionar entre 21 gifs diferentes e também selecionar qualquer imagem da maquina dele para ser enviado para a minitela.</p>
+
+      <strong>Este projeto foi realizado por 4 desenvolvedores, todos trabalhamos em equipe para entregar o produto dentro do prazo e sem erros/bugs, também foi desenvolvido uma versão em linux para este projeto, com as mesmas requisições da versão windows.</strong>
     `,
     links: [
-      { label: "Link do produto lançado oficialmente na loja Positivo", url: "https://loja.meupositivo.com.br/notebook-positivo-vision-r15m-amd-ryzen-7-5825u-linux-8gb-ram-256gb-ssd-wi-fi-6-15-full-hd-ips-minitela-preto-3003077/p" },
+      { label: "https://loja.meupositivo.com.br/notebook-positivo-vision-r15m-amd-ryzen-7-5825u-linux-8gb-ram-256gb-ssd-wi-fi-6-15-full-hd-ips-minitela-preto-3003077/p", url: "https://loja.meupositivo.com.br/notebook-positivo-vision-r15m-amd-ryzen-7-5825u-linux-8gb-ram-256gb-ssd-wi-fi-6-15-full-hd-ips-minitela-preto-3003077/p" },
 
     ]
   },
@@ -255,10 +275,11 @@ export const projects = [
     imagem: "/imgs/js-react.jpg",
     resumo: "Estes são dois repositórios de estudos que realizei durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite",
     conteudo: `
-      <h3>Estes são dois projetos de estudos que realizei durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite</h2>
+      <h3>Estes são dois projetos de estudos que realizei durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite</h2> <br>
 
-      <p>Nesta sessão irei apenas comentar sobre dois projeto que considerei muito importante para todo meu aprendizado de React e Javascript, durante toda minha trajetória como desenvolvedor, experencias com diversas tecnologias diferentes como: C#, C++, Python, Javascript... de todas essas linguagem, a que mais me gerou interesse foi o Javascript, isso pois eu considero que foram diversas etapas de aprendizado para dominar o conceito "Web", partimos tanto da parte de segurança, dominios, HTTP/HTTPS, servidores, lógica de programação, APIs Rest, para estruturas MVC com integrações de front + backend com nodeJs utilizando express, cors, sanitize, dotenv, então o estudos de javascript me fez aprender diversos conceitos da programação e de como a web funciona por debaixo dos panos, tanto que considero que foi graças a estes projetos que todos meus outros projetos surgiram, com diversos aprendizados que obtive aqui e tanto com muita constancia e interesse em aprender.</p>
-      <p>Após me considerar apto a Javascript minha proxíma trajetoria foi realizar estudos de um framework, e para isso eu decide estudar os frameworks, React e VueJs, ambos também foram de muito importancia em minha trajetória, tanto que destaco meu projeto institucional que foi desenvolvido em VueJs e esse site conta com mais de 100-200 visualizações diárias. E recentemente aprimorei minha expertisse em React com o projeto abaixo, também ja trabalhei com React anteriormente em um projeto de uma minitela LCD embarcada, eu desenvolvi um aplicativo em React, Electron e NodeJs, para criar uma rota de comunicação desta minitela com o app e posteriormente adicionar uma funcionalidade para alterar o conteudo já embarcado nessa minitela via buffers utilizando portas COM, então todo este projeto me ajudou a aprender sobre este framework e também me despertar um novo interesse em aplicar todo este conhecimento.</p>
+      <p>Nesta sessão irei apenas comentar sobre dois projeto que considerei muito importante para todo meu aprendizado de React e Javascript, durante toda minha trajetória como desenvolvedor, experencias com diversas tecnologias diferentes como: C#, C++, Python, Javascript... de todas essas linguagem, a que mais me gerou interesse foi o Javascript, isso pois eu considero que foram diversas etapas de aprendizado para dominar o conceito "Web", partimos tanto da parte de segurança, dominios, HTTP/HTTPS, servidores, lógica de programação, APIs Rest, para estruturas MVC com integrações de front + backend com nodeJs utilizando express, cors, sanitize, dotenv, então o estudos de javascript me fez aprender diversos conceitos da programação e de como a web funciona por debaixo dos panos, tanto que considero que foi graças a estes projetos que todos meus outros projetos surgiram, com diversos aprendizados que obtive aqui e tanto com muita constancia e interesse em aprender.</p> <br>
+      
+      <p>Após me considerar apto a Javascript minha proxíma trajetoria foi realizar estudos de um framework, e para isso eu decide estudar os frameworks, React e VueJs, ambos também foram de muito importancia em minha trajetória, tanto que destaco meu projeto institucional que foi desenvolvido em VueJs e esse site conta com mais de 100-200 visualizações diárias. E recentemente aprimorei minha expertisse em React com o projeto abaixo, também ja trabalhei com React anteriormente em um projeto de uma minitela LCD embarcada, eu desenvolvi um aplicativo em React, Electron e NodeJs, para criar uma rota de comunicação desta minitela com o app e posteriormente adicionar uma funcionalidade para alterar o conteudo já embarcado nessa minitela via buffers utilizando portas COM, então todo este projeto me ajudou a aprender sobre este framework e também me despertar um novo interesse em aplicar todo este conhecimento.</p> <br>
 
       <strong>E está foi minha trajetória com estes dois projetos abaixo, e com certeza, para mim, foi algo muito importante e que me ajudou a decidir a carreira que estou criando.</strong>
     `,
