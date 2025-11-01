@@ -252,17 +252,19 @@ export const projects = [
     id: 6,
     slug: "projeto-estudos-javascript-react",
     titulo: "Projeto de Estudos Javascript/React",
-    imagem: "/imgs/colocarImagem.png",
-    resumo: "Estes são dois repositórios de estudos que fiz durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite",
+    imagem: "/imgs/js-react.jpg",
+    resumo: "Estes são dois repositórios de estudos que realizei durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite",
     conteudo: `
-      <h2>Descricao projeto</h2>
-      <p>Texto projeto</p>
-      <img src="/imgs/minitela.png"/>
-      <p>Novo texto projeto</p>
+      <h3>Estes são dois projetos de estudos que realizei durante minha trajetoria de estudos sobre o React e Javascript, aqui nós encontramos diversos modulos de estudos e também outros metodos e integrações do React + Vite</h2>
+
+      <p>Nesta sessão irei apenas comentar sobre dois projeto que considerei muito importante para todo meu aprendizado de React e Javascript, durante toda minha trajetória como desenvolvedor, experencias com diversas tecnologias diferentes como: C#, C++, Python, Javascript... de todas essas linguagem, a que mais me gerou interesse foi o Javascript, isso pois eu considero que foram diversas etapas de aprendizado para dominar o conceito "Web", partimos tanto da parte de segurança, dominios, HTTP/HTTPS, servidores, lógica de programação, APIs Rest, para estruturas MVC com integrações de front + backend com nodeJs utilizando express, cors, sanitize, dotenv, então o estudos de javascript me fez aprender diversos conceitos da programação e de como a web funciona por debaixo dos panos, tanto que considero que foi graças a estes projetos que todos meus outros projetos surgiram, com diversos aprendizados que obtive aqui e tanto com muita constancia e interesse em aprender.</p>
+      <p>Após me considerar apto a Javascript minha proxíma trajetoria foi realizar estudos de um framework, e para isso eu decide estudar os frameworks, React e VueJs, ambos também foram de muito importancia em minha trajetória, tanto que destaco meu projeto institucional que foi desenvolvido em VueJs e esse site conta com mais de 100-200 visualizações diárias. E recentemente aprimorei minha expertisse em React com o projeto abaixo, também ja trabalhei com React anteriormente em um projeto de uma minitela LCD embarcada, eu desenvolvi um aplicativo em React, Electron e NodeJs, para criar uma rota de comunicação desta minitela com o app e posteriormente adicionar uma funcionalidade para alterar o conteudo já embarcado nessa minitela via buffers utilizando portas COM, então todo este projeto me ajudou a aprender sobre este framework e também me despertar um novo interesse em aplicar todo este conhecimento.</p>
+
+      <strong>E está foi minha trajetória com estes dois projetos abaixo, e com certeza, para mim, foi algo muito importante e que me ajudou a decidir a carreira que estou criando.</strong>
     `,
     links: [
-      { label: "Link Projeto", url: "https://github.com/Erick-bonfati/React" },
-      { label: "Link Projeto", url: "https://github.com/Erick-bonfati/Javascript" },
+      { label: "https://github.com/Erick-bonfati/Javascript", url: "https://github.com/Erick-bonfati/Javascript" },
+      { label: "https://github.com/Erick-bonfati/React", url: "https://github.com/Erick-bonfati/React" },
     ]
   },
   
