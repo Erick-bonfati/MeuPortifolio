@@ -142,16 +142,57 @@ export const projects = [
     id: 4,
     slug: "central-de-estudos",
     titulo: "Central de Estudos",
-    imagem: "/imgs/colocarImagem.png",
-    resumo: "Falar resumo",
+    imagem: "/imgs/central-estudos/visao1.png",
+    resumo: "O projeto Central de Estudos foi desenvolvido com objetivo de ajudar os estudantes utilizando um timer pomodoro e também na criação de tarefas e objetivos.",
     conteudo: `
-      <h2>Descricao projeto</h2>
-      <p>Texto projeto</p>
-      <img src="/imgs/minitela.png" class="detail-img"/>
-      <p>Novo texto projeto</p>
+      <h2>O projeto Central de Estudos foi desenvolvido com objetivo de ajudar os estudantes utilizando um timer pomodoro e também na criação de tarefas e objetivos."</h2>
+      <p>Este projeto foi desenvolvido por mim, com objetivo de me auxiliar em meus estudos diarios utilizando a métodologia pomorodo e também para me auxiliar com criação de anotações de estudos e cards a ser estudados, também existe um gráfico para exibir quantas horas-minutos foram estudados em cada dia da semana e também o total de horas na semana, posteriormente este projeto foi posto como público em meu repositório para caso qualquer um timer interesse em usar está métodologia.</p>
+
+      <strong>O projeto foi desenvolvido com React + Vite + NodeJs(Backend), seguindo estrutura MVC, boas pratícas de programação e estilização responsiva.</strong>
+      <h2>Apresentação projeto</h2>
+      <img src="/imgs/central-estudos/pomodoro.png" class="detail-img"/>
+
+      <p>Iniciando pelo timer pomodoro, foram criados lógicas para Iniciar, pausar, alterar timers entre "trabalho, pausa curta e pausa longa" e assoiar uma tarefa a este timer.</p>
+
+      <p>Também foram adicionados efeitos sonoros para quando restar somente 5 minutos para finalizar o timer, para quando pausar o timer e quando encerrar.</p>
+
+      <img src="/imgs/central-estudos/cards-pomodoro.png" class="detail-img"/>
+
+      <p>Ao adicionar uma nova tarefa, você deve ver os cards da tarefa que iniando vazio e a partir disso você pode ir adicionando quantos cards desejar com base na quantidade de etapas que será realizada dentro desta tarefa.</p>
+
+      <p>E ao clicar em concluir, esta tarefa será marcada como concluida e não será mais possivel de ser visualização em Tarefas.</p>
+
+      <h2> Tela anotações </h2>
+
+      <img src="/imgs/central-estudos/mostrar-tarefas-terminadas.png" class="detail-img"/>
+
+      <p>Na página "Anotações" você conseguirá visualizar todas suas tarefas concluidas, sendo possivel exclui-lás da base de dados ou não, e caso não tenha interesse em saber quais tarefas já foram concluidas, você pode selecionar a opção "Ocultas Concluídas"
+
+      <p> Nesta mesma paginá podemos adicionar uma anotação exatamente igual a página pomodoro e também com as opções de adicionar cards, e caso todos cards estejam marcados como concluídos, você pode concluir a tarefa.</p>
+      
+      <img src="/imgs/central-estudos/nova-nota.png" class="detail-img"/>
+      <img src="/imgs/central-estudos/tarefas-feitas.png" class="detail-img"/>
+
+      <h2>Sistema de Logins e Registro</h2>
+
+      <p>Foi criado também um sistema de login para usuarios, dessa maneira podemos salvar todas tarefas individuais de cada um, sem necessidade de salvar os dados na memória do navegador, sendo este login valido durante uma semana antes de precisar realizar um login novamente.</p>
+
+      <img src="/imgs/central-estudos/login.png" class="detail-img"/>
+
+      <p>Logo abaixo das informações de login também temos o encaminhando para cadastro de usuário caso este usuario não tiver uma conta.</p>
+
+      <img src="/imgs/central-estudos/registrar.png" class="detail-img"/>
+
+      <h2> Registro de tempo de atividade </h2>
+
+      <p> Por fim foi adicionado uma funcionalidade que será um gráfico para visualizar as horas/minutos estudados e também sequencia de dias e total de tempo estudado na semana, esta informação se encontra disponivel na página timer pomodoro, logo após o usuario efetuar o login de seu usuario.</p>
+
+      <img src="/imgs/central-estudos/resumo-atividades.png" class="detail-img"/>
+
+      <p>E este foi o projeto Central de Estudos, ainda estou em fase de implementação deste projeto, será adicionado uma nota rota para verificar todo o progresso de tarefas e associar cada tarefa com o timer pomorodo, então ainda existem algumas novidades por vir.</p>
     `,
     links: [
-      { label: "Link Projeto", url: "https://github.com/Erick-bonfati/Central-estudos" },
+      { label: "https://github.com/Erick-bonfati/Central-estudos", url: "https://github.com/Erick-bonfati/Central-estudos" },
 
     ]
   },
