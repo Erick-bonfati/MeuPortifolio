@@ -19,6 +19,17 @@
   .grid { grid-template-columns: 1fr }
 }
 
+/* espaço para não ficar atrás do header */
+.container {
+  padding-top: 160px; 
+}
+
+/* espaço antes do footer */
+.container {
+  padding-bottom: 80px;
+}
+
+
 .card {
   background: #171e28;
   border-radius: 14px;
@@ -101,3 +112,4 @@
 p {
   font-size: 18px;
 }
+

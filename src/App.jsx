@@ -7,16 +7,18 @@ import Home from './pages/Home'
 import Projetos from './pages/Projetos'
 import Contato from './pages/Contato'
 import ProjetoDetalhe from './pages/ProjetoDetalhe'
-
+import { Toaster } from 'react-hot-toast'
 
 
 function App() {
 
   return (
     <div className="app-container">
+        <Toaster position='top-right' />
         <Header />
         <main className="main-content">
           <Routes>
+
             <Route path='/' element={<Home />} />
             <Route path='/projetos' element={<Projetos />} />
             <Route path='/contato' element={<Contato />} />

@@ -14,13 +14,14 @@ export default function Home() {
         <div className="home-text">
           <h1>Erick Bonfati</h1>
           <p>
-            Sou desenvolvedor fullstack em constante aprendizado e com muita vontade de aprender. 
-            Trabalho com tecnologias como JavaScript,
-            Node.js, React, VueJs, Python e C#, desenvolvendo tanto o frontend quanto o backend
-            de aplicações.
-            Também possuo expertisse em criação de servidores em Nuvem com Google Cloud.
-          </p>
-          <Link to="/projetos" className="home-btn">Ver meus projetos</Link>
+          Sou desenvolvedor full-stack, sempre em busca de aprender e evoluir como profissional. Atuo no desenvolvimento de aplicações Web e Desktop utilizando <strong>JavaScript, Node.js, React, Vue.js, Python e C#</strong>, com experiência tanto no frontend quanto no backend. <br/><br/>
+
+          Tenho experiência com <strong>APIs REST</strong>, <strong>arquitetura moderna</strong>, versionamento com <strong>Git</strong>, metodologias ágeis como <strong>Scrum</strong> e deploy em <strong>Google Cloud</strong>. <br/><br/>
+
+          Meu objetivo é contruir soluções eficiente com foco em código limpo, boa lógica e performance, sempre aprendendo e melhorando a cada projeto.
+        </p>
+        
+        <Link to="/projetos" className="home-btn">Ver meus projetos</Link>
         </div>
       </div>
     </main>

@@ -1,5 +1,6 @@
+/* HEADER */
 .header {
-
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -7,28 +8,42 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
+  background: #070422;
+  box-shadow: 0 0 15px rgba(120, 70, 220, 0.2);
+}
+
+/* NAV WRAPPER */
+.nav-area {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 15px 30px; 
-  background-color: #070422;
-  color: #ecf0f1; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
+  padding: 0 24px;
+  position: relative;
 }
 
-.header h2 {
-  margin: 0;
-  font-size: 24px;
+/* LOGO LEFT */
+.logo {
+  position: absolute;
+  left: 24px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #a98aff;
+  letter-spacing: 1px;
+  cursor: default;
+  font-family: "JetBrains Mono", monospace;
 }
 
+/* CENTER MENU */
 .nav-links {
   display: flex;
   list-style: none;
+  gap: 22px;
   margin: 0;
   padding: 0;
-  gap: 15px;
 }
 
-/* O elemento <a> dentro do Link do React Router */
 .nav-links a {
   color: #ecf0f1;
   text-decoration: none;
@@ -36,16 +51,67 @@
   border-radius: 8px;
   font-weight: 500;
   font-size: 18px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
-/* Efeito ao passar o mouse */
 .nav-links a:hover {
-  background-color: #34495e;
-  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.07);
+  transform: translateY(-3px);
 }
 
-.nav-links a.active {
-  background-color: #e74c3c;
-  color: #fff;
+/* RIGHT SOCIAL */
+.header-social {
+  position: absolute;
+  right: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header-social img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.header-social img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+  filter: drop-shadow(0 0 6px rgba(160, 110, 255, 0.8));
+}
+
+/* ✅ MOBILE FIX */
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .nav-area {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .logo {
+    position: relative;
+    left: auto;
+    margin-bottom: 15px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 15px;
+  }
+
+  .header-social {
+    position: relative;
+    right: auto;
+    margin-top: 6px;
+  }
 }

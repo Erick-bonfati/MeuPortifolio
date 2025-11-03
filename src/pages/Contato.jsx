@@ -1,4 +1,5 @@
 import "./Contato.css"
+import { enviaForm } from "../components/Contato"
 
 export default function Contato() {
   return (
@@ -7,15 +8,15 @@ export default function Contato() {
         <h1>Entrar em contato 📬</h1>
         <p>Fique à vontade para enviar uma mensagem. Retornarei o mais breve possível!</p>
 
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="contact-form" onSubmit={enviaForm}>
           <div className="form-group">
-            <input type="text" placeholder="Seu nome" required /> 
+            <input name="nome" type="text" placeholder="Seu nome" required /> 
           </div>
           <div className="form-group">
-            <input type="email" placeholder="Seu e-mail" required />
+            <input name="email" type="email" placeholder="Seu e-mail" required />
           </div>
           <div className="form-group">
-            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+            <textarea name="mensagem" type="text" placeholder="Sua mensagem" rows="5" required></textarea>
           </div>
           <button type="submit" className="contact-btn">Enviar mensagem</button>
         </form>
